@@ -1,0 +1,98 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #212121;
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+h1 {
+  padding-bottom: 30px;
+  font-weight: 900;
+  font-size: 35px;
+}
+.inputsCont {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 15%;
+
+}
+.form {
+  width:50%;
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
+
+.form input {
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  padding-top: 20px;
+  border: none;
+  background-color: #212121;
+}
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+}
+.form label::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #fce38a;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.contentName {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+.form input:focus {
+  outline: none;
+}
+.form input:focus + .labelName .contentName,
+.form input:valid + .labelName .contentName {
+  transform: translateY(-150%);
+  font-size: 14px;
+  left: 0px;
+  color: #fce38a;
+}
+.form input:focus + .labelName::after,
+.form input:valid + .labelName::after {
+  transform: translateX(0%);
+}
+.textarea {
+  margin-top: 80px;
+  width: 75%;
+  height: 30%;
+  background-color: #212121;
+  color: #fff;
+}
+.buttonContact {
+  background-color: #27ae60;
+    color: #e5e5e5;
+    border: none;
+    margin-right: 10px;
+    width: 143px;
+    height: 42px;
+    margin-top: 20px;
+}

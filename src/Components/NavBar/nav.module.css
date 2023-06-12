@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.titleNav {
+    color: #e5e5e5;
+}
+.titleNav h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.containerNavLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: #e5e5e5;
+    width: 50vw;
+}
+.navLink {
+    text-decoration: none;
+    color: #e5e5e5;
+    padding-top: 15px;
+}
