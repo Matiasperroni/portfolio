@@ -8,7 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const About = () => {
     return (
         <>
-            <section className={styles.container} id="About">
+            <section className={styles.container} id='About'>
                 <h1>About Me</h1>
                 <div className={styles.parrafContainer}>
                     <p>
@@ -45,15 +45,20 @@ const About = () => {
                     <div className={styles.card}>
                         <EmailIcon />
                         <h3>Email Addres</h3>
-                        <h5>matiperroni.96@gmail.com</h5>
+                        <a
+                            href='mailto:matiperroni.96@gmail.com'
+                            target='_blank'
+                        >
+                            <h5>matiperroni.96@gmail.com</h5>
+                        </a>
                     </div>
                     <div className={styles.card}>
                         <GitHubIcon />
                         <h3>Github</h3>
                         <h5>
                             <a
-                                href="https://github.com/Matiasperroni"
-                                target="_blank"
+                                href='https://github.com/Matiasperroni'
+                                target='_blank'
                             >
                                 Go to Github
                             </a>
@@ -64,8 +69,8 @@ const About = () => {
                         <h3>Linkedin</h3>
                         <h5>
                             <a
-                                href="https://www.linkedin.com/in/matias-perroni/"
-                                target="_blank"
+                                href='https://www.linkedin.com/in/matias-perroni/'
+                                target='_blank'
                             >
                                 Go to Linkedin
                             </a>
