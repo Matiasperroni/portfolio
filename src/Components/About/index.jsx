@@ -4,6 +4,15 @@ import PersonIcon from "@mui/icons-material/Person";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import jsIcon from "../../assets/images/logojs.png";
+import expressIcon from "../../assets/images/logoexpress.png";
+import reactIcon from "../../assets/images/reactlogo.png";
+import firebaseIcon from "../../assets/images/firebaselogo.png";
+import gitIcon from "../../assets/images/gitlogo.png";
+import nodeIcon from "../../assets/images/nodelogo.png";
+import mongoIcon from "../../assets/images/mongologo.png";
+import htmlIcon from "../../assets/images/htmllogo.png";
+import cssIcon from "../../assets/images/csslogo.png";
 
 const About = () => {
     return (
@@ -12,28 +21,12 @@ const About = () => {
                 <h1>About Me</h1>
                 <div className={styles.parrafContainer}>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Ipsum hic unde natus quas a est, facere ratione
-                        dignissimos voluptates nemo minima quo commodi illo,
-                        voluptatibus sint. Distinctio ipsa minima in. Aliquid,
-                        voluptates eos? Sed molestias suscipit quam optio quod
-                        magnam pariatur consequuntur? Sapiente quidem debitis
-                        ipsam placeat cumque, temporibus dolore facilis quae,
-                        autem repellat voluptatum, quia voluptatem velit
-                        voluptatibus. Atque! Nesciunt repudiandae, vero nihil
-                        exercitationem iste nisi itaque numquam possimus
-                        voluptatibus quae esse maxime optio mollitia, eum odio
-                        reprehenderit veniam? Sed, explicabo sapiente. Sequi
-                        exercitationem est quas odio mollitia recusandae! Eaque
-                        unde nostrum exercitationem repellendus magni,
-                        reiciendis hic perspiciatis temporibus. Est veritatis
-                        labore excepturi tenetur modi quisquam aperiam
-                        cupiditate distinctio, qui aliquam tempore eius maxime
-                        id illo, exercitationem eveniet officiis? Provident
-                        laudantium quidem dicta reiciendis aperiam totam earum
-                        minus vel? Sunt velit laborum minus cupiditate dolor
-                        iste sequi aperiam architecto libero, magni fuga
-                        tempora, neque nemo possimus, cum culpa adipisci.
+                        I am passionate about technology looking to enter the
+                        world of programming. I focus on web development and I
+                        am currently learning Javascript, both in Frontend and
+                        Backend. My goal is to implement everything that i
+                        learned so far and keep acquiring knowledge to become an
+                        efficient developer.
                     </p>
                 </div>
                 <div className={styles.linksCont}>
@@ -76,6 +69,18 @@ const About = () => {
                             </a>
                         </h5>
                     </div>
+                </div>
+                    <h2 className={styles.stackTitle}>Software Stack</h2>
+                <div className={styles.stack}>
+                    <img src={htmlIcon} alt="logo mongoDB" />  
+                    <img src={cssIcon} alt="logo mongoDB" />                      
+                    <img src={jsIcon} alt="logo javascript" />
+                    <img src={reactIcon} alt="logo react" />
+                    <img src={firebaseIcon} alt="logo firebase" />
+                    <img src={nodeIcon} alt="logo node" />
+                    <img src={expressIcon} alt="logo express" />
+                    <img src={mongoIcon} alt="logo mongoDB" />
+                    <img src={gitIcon} alt="logo git" />
                 </div>
             </section>
         </>
