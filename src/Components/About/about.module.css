@@ -1,5 +1,5 @@
 .container {
-    height: 100vh;
+    min-height: 100vh;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -45,4 +45,36 @@
 .stack img {
     width: 80px;
     height: 80px;
+}
+@media (max-width: 1000px) {
+    .stack {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .stack img {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 809px) {
+    .stack {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .stack img {
+        margin-left: 60px;
+        margin-bottom: 50px;
+    }
+    .linksCont {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+}
+@media (max-width: 475px) {
+    .linksCont {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
