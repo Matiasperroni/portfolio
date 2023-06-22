@@ -7,16 +7,13 @@ const NavBar = () => {
     const [burgerClass, setburgerClass] = useState(`${styles.burguerBar} ${styles.unclicked}`)
     const [menuClass, setmenuClass] = useState(`${styles.containerNavLinks} ${styles.hidden}`)
     const [isMenuClicked, setisMenuClicked] = useState(false)
-    console.log(menuClass);
     const updateMenu = () => {
         if(!isMenuClicked) {
             setburgerClass(`${styles.burguerBar} ${styles.clicked}`)
             setmenuClass(`${styles.containerNavLinks} ${styles.visible}`)
-            console.log("asd");
         } else {
             setburgerClass(`${styles.burguerBar} ${styles.unclicked}`)
             setmenuClass(`${styles.containerNavLinks} ${styles.hidden}`)
-            console.log("asd");
         }
         setisMenuClicked(!isMenuClicked)
     }
