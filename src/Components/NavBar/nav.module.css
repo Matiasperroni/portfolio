@@ -4,6 +4,8 @@
 }
 .titleNav {
     color: #e5e5e5;
+    position: absolute;
+    left: 0%;
 }
 .titleNav h1 {
     font-size: 48px;
@@ -44,4 +46,76 @@
 .navLink:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        height: 5em;
+        padding: 1em;
+        /* background-color: #212121; */
+        
+    }
+    .titleNav {
+        position: absolute;
+        left: 25%;
+        z-index: 2;
+    }
+    .burgerMenu {
+        height: 100%;
+        width: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .burguerBar {
+        width: 4em;
+        height: 0.5em;
+        background-color: #e5e5e5;
+        border-radius: 0.5em;
+    }
+    .containerNavLinks {
+        width: 50%;
+        height: 100vh;
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 25%;
+        padding-left: 10%;
+        /* background-color: blue; */
+    }
+    /* .navLink {
+        font-size: 36px;
+    } */
+    .hidden {
+        display: none;
+    }
+    .visible {
+        display: inherit;
+    }
+
+    .burguerBar.clicked:nth-child(1) {
+        transform: rotate(45deg) translate(0.75em, 1.25em);
+        transition: ease-out 0.5s;
+    }
+    .burguerBar.clicked:nth-child(2) {
+        transform: scale(0.1);
+        transition: ease-out 0.5s;
+    }
+    .burguerBar.clicked:nth-child(3) {
+        transform: rotate(135deg) translate(-0.5em, 1em);
+        transition: ease-out 0.5s;
+    }
+    .burguerBar.clicked {
+        z-index: 1;
+    }
+
+    .burguerBar.unclicked {
+        transform: rotate(0) translate(0);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    }
 }
