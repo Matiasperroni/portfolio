@@ -15,13 +15,15 @@
 .videosCont {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .videoBox {
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 15px 0;
 }
 .videoBox h4 {
   color: white;
