@@ -70,7 +70,7 @@ const Projects = () => {
                     <h4>App that fetchs movies from the IMDB API, made with React and Javascript.</h4>
                     <div className={styles.parrafCont}>
                         <a
-                            href='https://github.com/Matiasperroni/Movies-search-box'
+                            href='https://movies-search-ezopl25xh-matiasperroni.vercel.app/'
                             target='_blank'
                         >
                             View online
