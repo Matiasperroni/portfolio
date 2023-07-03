@@ -9,6 +9,30 @@ const Projects = () => {
         <div className={styles.container} id='Projects'>
             <h1>Check some of my projects</h1>
             <div className={styles.videosCont}>
+            <div className={styles.videoBox}>
+                    <video
+                        src={gifMovieSearchBox}
+                        loop
+                        autoPlay
+                        muted
+                        alt='movie search box preview'
+                    />
+                    <h4>App that fetchs movies from the IMDB API, made with React and Javascript.</h4>
+                    <div className={styles.parrafCont}>
+                        <a
+                            href='https://movies-search-ezopl25xh-matiasperroni.vercel.app/'
+                            target='_blank'
+                        >
+                            View online
+                        </a>
+                        <a
+                            href='https://github.com/Matiasperroni/Movies-search-box'
+                            target='_blank'
+                        >
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
                 <div className={styles.videoBox}>
                     <video
                         src={gifReactEcommerce}
@@ -59,30 +83,7 @@ const Projects = () => {
                         </a>
                     </div>
                 </div>
-                <div className={styles.videoBox}>
-                    <video
-                        src={gifMovieSearchBox}
-                        loop
-                        autoPlay
-                        muted
-                        alt='movie search box preview'
-                    />
-                    <h4>App that fetchs movies from the IMDB API, made with React and Javascript.</h4>
-                    <div className={styles.parrafCont}>
-                        <a
-                            href='https://movies-search-ezopl25xh-matiasperroni.vercel.app/'
-                            target='_blank'
-                        >
-                            View online
-                        </a>
-                        <a
-                            href='https://github.com/Matiasperroni/Movies-search-box'
-                            target='_blank'
-                        >
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     );

@@ -63,8 +63,7 @@
         width: 80%;
     }
     .stack img {
-        margin-left: 60px;
-        margin-bottom: 50px;
+        margin: 0 30px 50px 30px;
     }
     .linksCont {
         display: grid;
@@ -76,5 +75,11 @@
     .linksCont {
         display: grid;
         grid-template-columns: auto;
+    }
+    .stack {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        padding: 0;
     }
 }
