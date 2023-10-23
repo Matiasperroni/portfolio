@@ -7,6 +7,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 8rem;
 }
 
 .contentContainer {
@@ -29,7 +30,8 @@ body {
 
 .buttonsCont {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 .buttonsCont button {
   width: 143px;
@@ -54,7 +56,8 @@ body {
 
 @media (min-width: 600px) {
   .imgContainer {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
   .imgHome {
     width: 100%;
@@ -67,9 +70,5 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 50%);
   }
-  .buttonsCont {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+
 }
